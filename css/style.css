@@ -1,0 +1,142 @@
+.container{
+	margin: 0 auto;
+	max-width: 	1100px;
+}
+}
+.shop__img{
+	width: 100%;
+	height: 500px;
+}
+.itc-slider-items{
+width: ;
+}
+.itc-slider{
+	width: 1000px;
+}
+.container__slider{
+	display: flex;
+	justify-content: center;
+}
+.header__menu{
+	position: absolute;
+	z-index: 1;
+	background-color: pink;
+	width: 300px;
+	height: 100px;
+	padding: 40px;
+	display: none;
+}
+.is-active{
+	display: block;
+}
+.nav__img{
+	width: 50px;
+	margin-right: 200px;
+}
+.nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header__title{
+	margin-right: 30px;
+	color: white;
+}
+.nav__list{
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+.nav__item{
+	margin-right: 30px;
+}
+.container__header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header{
+	background-color: orange;
+}
+.footer{
+	background-color: orange;	
+}
+.theme__white{
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 50%;
+}
+.theme__black{
+	width: 20px;
+	height: 20px;
+	background-color: black;
+	border-radius: 50%;
+}
+.theme__list{
+	list-style: none;
+	display: flex;
+}
+.theme__item{
+	margin-right: 10px;
+}
+.nav__link{
+	color: white;
+}
+.footer__text{
+	color: white;
+}
+.theme__item{
+	margin-right: 10px;
+}
+.shop__title{
+	margin-top: 0px;
+}
+body{
+	margin: 0;
+}
+.burger__line{
+	width: 50px;
+	height: 10px;
+	background-color: white;
+	margin: 10px;
+}
+.burger{
+	display: none;
+}
+@media screen and (max-width:1000px){
+	.nav__list{display: flex;
+		flex-direction: column;
+		background-color: white;
+		position: absolute;
+		right: 0px;
+		height: 40vh;
+		top: 225px;
+		z-index: 2;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.nav__list_active{
+		transform: translateX(0%);
+	}
+	.container{max-width: 600px}
+	.burger{
+		display: block;
+	}
+	body{
+		overflow-x: hidden;
+	}
+.nav__item{
+		opacity: 0;
+	}
+}
+@keyframes navLinkAnim{
+	from{
+    opacity: 0;
+    transform: translateX(10%);
+	}
+	to{
+     opacity: 1;
+    transform: translateX(0%);
+	}
+}
